@@ -1,0 +1,32 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+.chat{
+    bottom: 0;
+    right: 0;
+    margin: 3rem;
+    width: 30px;
+    height: 30px;
+    padding: 0.50rem;
+    overflow: hidden;
+    background: #2a2e3aa2;;
+    border-radius: 100px;
+    position: fixed;
+    text-align: center;
+    animation: 1s pulse alternate infinite;
+}
+
+
+@keyframes pulse {
+    0%{
+        scale: 1.1;
+    }
+    50% {
+        scale: 1.0;
+    }
+    100%{
+        scale: 1.1;
+    }
+}

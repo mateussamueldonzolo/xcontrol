@@ -1,0 +1,339 @@
+body{
+    padding: 0;
+    margin: auto;
+    width: 92%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0B0F19;
+    color: #f1f1f1;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background: #83838310;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #983ee2;
+    border-radius: 10px;
+}
+
+/*
+::selection{
+    background: #31106d77;
+    color: #fff;
+}
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.menu{
+    word-spacing: 20px;
+}
+
+a{
+    color: #fff;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.btn-comprar button{
+    background: #983ee2;
+    padding: 1rem;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/*SECTION*/
+
+.banner{
+    display: flex;
+    height: 80vh;
+    margin-bottom: 10rem;
+}
+
+.sec-e{
+    width: 40%;
+}
+
+.sec-d{
+    width: 60%;
+    background: url(../img/app-mock-13.png);
+    background-size: cover;
+}
+
+.sec-e button{
+    width: 150px;
+    background: #983ee2;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.shadow{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, #31106d, #983ee2);
+    filter: blur(180px);
+}
+
+.banner h1{
+    font-size: 5rem;
+
+}
+
+/*ABOUT-ME*/
+
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 0.90fr;
+    gap: 5rem;
+    height: 550px;
+    margin-bottom: 8rem;
+}
+
+.about-img{
+    background-color: #983ee2;
+    background-image: url(../img/look-6-1.jpg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.about-text{
+    line-height: 3rem;
+    padding: 2rem;
+}
+
+.about-text h2{
+    font-size: 3rem;
+}
+
+.btn-about button{
+    background: transparent;
+    border: 0;
+    color: #983ee2;
+    outline: 0.1px solid #983ee2;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.btn-about button:hover{
+    transition: .2s ease-in-out;
+    color: #fff;
+    background: #983ee2;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*TEMA*/
+.tema{
+    margin: 8rem 0 8rem 0;
+    text-align: center;
+    font-size: 1.30rem;
+}
+.icones{
+    display: flex;
+}
+
+/*ESP*/
+
+.card-icon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: auto;
+    text-align: center;
+}
+
+.card-1{
+    outline: 0.1px solid #b1b1b12d;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.card-icon p{
+    color: #b1b1b1;
+    line-height: 2em;
+}
+
+.carrosel{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    height: 500px;
+    background: #151822;
+}
+
+.parceiros{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    color: #7D7D7D;
+}
+
+/*PROJ*/
+
+
+.proj-1{
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    gap: 5rem;
+    row-gap: 20px;
+    margin-bottom: 60px;
+}
+
+.proj-l{
+    background: #151822;
+    border-radius: 10px;
+}
+
+.proj-r{
+    padding: 2rem;
+    color: #888888;
+}
+
+.proj-r p:nth-child(1){
+    color: #888888;
+    font-size: 18px;
+}
+
+#p2 {
+    line-height: 2rem;
+}
+
+#p3 {
+    line-height: 2rem;
+    font-size: 16px;
+    width: 400px;
+    color: #666565;
+}
+.proj-r h2{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.proj-r button{
+    background: transparent;
+    border: 0;
+    color: #983ee2;
+    outline: 0.1px solid #983ee2;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.proj-r button:hover{
+    transition: .2s ease-in-out;
+    color: #fff;
+    background: #983ee2;
+}
+
+/*BENE*/
+
+.benef{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    line-height: 30px;
+}
+
+strong{
+    font-size: 1.50rem;
+}
+
+/*CARD-LOGO*/
+
+.card-icon2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: auto;
+    text-align: center;
+}
+
+.card-2{
+    outline: 0.1px solid #b1b1b12d;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: .2s ease;
+}
+
+.card-2:hover{
+    background: #151822;
+    outline: 0.1px solid #d8d8d82d;
+    transform: translateY(-10px);
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+/*BLOGS*/
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: 400px;
+}
+
+.blogs-photo{
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/*ADICIONAR FOTOS*/
+
+.blogs-photo{
+    background: url(../img/look-6-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#ph2{
+    background: url(../img/product-3-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.blogs-text p{
+    background: #151822;
+    width: 65px;
+    padding: 0.40rem;
+    border-radius: 8px;
+}
+
+.separator{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.separator span{
+    margin: 1em;
+    color: #585858;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 10rem;
+    height: 400px;
+    background: #151822;
+}
