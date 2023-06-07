@@ -13,41 +13,60 @@
 <body>
     
     <div class="chat">
-        <a href="#header"><img src="img/collapse.png"></a> 
+        <a href="#header"><img  width="19px" src="img/collapse.png"></a> 
+    </div>
+    <div class="player" onclick="gd()" id="fd">
+       
     </div>
     <header id="header">
         <div class="logo">
-            <h2>X-CONTROL</h2>
+            <h2>Web3</h2>
         </div>
         <div class="menu">
             <ul>
                 <a href=""><li>Ladings</li></a>
-                <a href=""><li>Pages</li></a>
-                <a href=""><li>Account</li></a>
+                <a href=""><li >Pages</li></a>
+                <a href=""><li class="drop">Account
+                    <div class="drop-down">
+                        <a href="#">Ana Bela</a>
+                        <a href="#">Ana Bela</a>
+                        <a href="#">Ana Bela</a>
+                        <a href="#">Ana Bela</a>
+                    </div>
+                </li></a>
                 <a href=""><li>Uikit</li></a>
                 <a href=""><li>Docs</li></a>
             </ul>
         </div>
         <div class="btn-comprar">
-            <button type="submit">Cadastrar</button>
+           <a href="login.html"> <button type="submit">Login</button> </a>
         </div>
     </header>
     <section class="banner">
-        <div class="sec-e">
-            <h1>Top <r style="color: blueviolet;">software</r> engineering company</h1>
-            <p>We are the Top Rated agency on Clutch rating</p>
-            <button type="submit">Cadastrar</button>
+        <div class="play">
+            <div class="playload"></div>
         </div>
+        <div class="shadow"></div>
         <div class="sec-d">
-            <div class="shadow">
-
-            </div>
+            <video onclick="stop()" id="vid" autoplay loop muted width="100%" >
+                <source  src="img/original-faa5eca6fe377cba010335c283d7a7e1.mp4" type="">
+            </video>
         </div>
     </section>
+    <script>
+        var v = document.getElementById("vid");
+        function stop(){
+            if(v.paused){
+                v.play();
+                troca.style.background = "url(img/play1.png)";
+            }else{
+                v.pause();
+                troca.style.background = "url(img/pause2.png)";
+            }
+        }
+    </script>
     <div class="about-me">
-        <div class="about-img">
-
-        </div>
+        <div class="about-img"></div>
         <div class="about-text">
             <h2>Award-Winning Software Company</h2>
             <p>Erat pharetra sed at fringilla etiam 
@@ -106,7 +125,36 @@
         </div>
     </div>
     <div class="carrosel">
-
+        <div class="car-text">
+            <div class="text-car" >
+                <h2 id="ba">Award-Winning 
+                    Software Company
+                    Software Company</h2>
+                <p>Erat pharetra sed at fringilla etiam nullam platea 
+                    fringilla ravida sodales sit mauris amet massa justo. 
+                    fringilla etiam nullam platea fringilla. 
+                    Gravida sodales sit mauris amet massa justo. Midle</p>
+            </div>
+            <div class="btn-prev">
+                <button type="" onclick="back()"><</button>
+                <button type="" onclick="next()">></button>
+            </div>
+        </div>
+        <div class="car-pic" id="carpic"></div>
+        <script>
+            var a = document.getElementById("carpic");
+            var b = document.getElementById("ba");
+            function next(){
+               a.style.background ="url(/img/product-3-3.jpg)";
+               b.innerHTML = "ANA";
+            }
+        </script>
+        <script>
+            var a = document.getElementById("carpic");
+            function back(){
+               a.style.background ="url(img/p2.png)";
+            }
+        </script>
     </div>
     <div class="parceiros">
         <div class="par">
@@ -165,7 +213,8 @@
                <p id="p3">
                 Product Strategy / Front end Development / Systems Design / Web Development
                </p>
-               <button type="submit">Read More</button> 
+              <a href="assets/progressbar.html"> <button type="submit">Read More</button> 
+              </a>
             </div>
         </div>
         <div class="proj-1">

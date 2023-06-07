@@ -3,9 +3,10 @@ body{
     margin: auto;
     width: 92%;
     font-family: Arial, Helvetica, sans-serif;
-    background: #0B0F19;
+    background: #0B0F19 !important;
     color: #f1f1f1;
 }
+
 
 ::-webkit-scrollbar{
     width: 7px;
@@ -25,9 +26,14 @@ body{
 */
 
 header{
+    height: 84px;
     display: flex;
     justify-content: space-between;
-    padding-top: 1rem;
+    padding-top: 2rem;
+}
+
+.logo{
+    font-size: 1rem;
 }
 
 .menu{
@@ -53,20 +59,54 @@ a{
 /*SECTION*/
 
 .banner{
-    display: flex;
-    height: 80vh;
-    margin-bottom: 10rem;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 7rem;
 }
 
-.sec-e{
-    width: 40%;
+.play{
+    background: #dddddd36;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    display: none;
 }
 
-.sec-d{
-    width: 60%;
-    background: url(../img/app-mock-13.png);
-    background-size: cover;
+.playload{
+    background: 
+    linear-gradient(to left, red, #580ce7, blue, #ab1ccf);
+    height: 5px;
+    border-radius: 10px;
+    animation: go-back 39s alternate infinite;
 }
+
+@keyframes go-back {
+    0%{
+        width: 5%;
+    }
+
+    20%{
+        width: 20%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+    60%{
+        width: -60%;
+    }
+
+    100%{
+        width: 100%;
+    }
+    
+}
+
+#vid{
+    z-index: -1px;
+}
+
 
 .sec-e button{
     width: 150px;
@@ -84,12 +124,12 @@ a{
     right: 0;
     width: 250px;
     height: 250px;
-    background: linear-gradient(to left, #31106d, #983ee2);
-    filter: blur(180px);
+    background: linear-gradient(to left, #4306b6, #983ee2);
+    filter: blur(100px);
 }
 
 .banner h1{
-    font-size: 5rem;
+    font-size: 4.8rem;
 
 }
 
@@ -174,8 +214,34 @@ button{
 .carrosel{
     margin-top: 8rem;
     margin-bottom: 8rem;
-    height: 500px;
-    background: #151822;
+    height: 600px;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    background: #151820;
+    overflow: hidden;
+}
+
+.car-text{
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.car-text p{
+    font-size: 17px;
+    line-height: 2em;
+}
+
+.btn-prev button{
+    border: 0;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+.car-pic{
+    background: url(../img/product-3-3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .parceiros{
@@ -310,7 +376,6 @@ strong{
     background-position: center;
 }
 
-
 .blogs-text p{
     background: #151822;
     width: 65px;
@@ -335,5 +400,5 @@ strong{
 footer{
     margin-top: 10rem;
     height: 400px;
-    background: #151822;
+    background: #17191f;
 }

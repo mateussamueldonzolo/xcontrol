@@ -3,20 +3,33 @@ html{
     scroll-behavior: smooth;
 }
 
-.chat{
+.chat, .player{
     bottom: 0;
     right: 0;
-    margin: 3rem;
-    width: 30px;
-    height: 30px;
+    margin: 4rem;
+    width: 22px;
+    height: 22px;
     padding: 0.50rem;
     overflow: hidden;
-    background: #2a2e3aa2;;
+    background: #2a2e3aa2;
     border-radius: 100px;
     position: fixed;
     text-align: center;
     animation: 1s pulse alternate infinite;
+    z-index: 1;
 }
+
+.player{
+    display: none !important;
+    right: 0;
+    bottom: 5rem;
+    background-size: cover;
+    z-index: 1;
+    animation: none;
+    background: url(../img/play1.png);
+    background-size: cover;
+}
+
 
 
 @keyframes pulse {
@@ -29,4 +42,35 @@ html{
     100%{
         scale: 1.1;
     }
+}
+
+
+/*Drop*/
+
+.drop{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-down{
+    background: #7704beef;
+    width: 450px;
+    border-radius: 10px;
+    display: block;
+    height: 300px;
+    margin-top: 3rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+
+.drop-down a{
+    text-decoration: none;
+    display: block;
+}
+
+.drop-down:hover{
+
+    transition: .3s;
+    transform: scale(1.1);
 }
