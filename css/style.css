@@ -1,7 +1,6 @@
 body{
+    margin: 0;
     padding: 0;
-    margin: auto;
-    width: 92%;
     font-family: Arial, Helvetica, sans-serif;
     background: #0B0F19 !important;
     color: #f1f1f1;
@@ -26,10 +25,16 @@ body{
 */
 
 header{
-    height: 84px;
+    z-index: 30;
+    height: auto;
+    padding: 7px;
     display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
+    align-items: center;
+    position: fixed;
+    justify-content: space-evenly;
+    background: #00000052;
+    backdrop-filter: blur(60px);
+    width: 100%;
 }
 
 .logo{
@@ -40,19 +45,49 @@ header{
     word-spacing: 20px;
 }
 
-a{
-    color: #fff;
+.menu ul li{
+    padding: 12px;
+    border-radius: 4px;
+    font-size:15px;
+    color:#fff;
 }
+
+#home{
+    color: #fff;
+    background: #ffffff13;
+}
+
+.menu a{
+  
+    
+    text-decoration: none;
+}
+
+/* .menu a:nth-child(2){
+    color: #580ce7;
+    font-weight: 700;
+} */
 
 .menu ul li{
     display: inline-block;
 }
 
+.btn-comprar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .btn-comprar button{
-    background: #983ee2;
-    padding: 1rem;
+    background:  #983ee2; 
+    height: 42px;
     border: 0;
-    border-radius: 8px;
+    border-radius: 4px;
+    width: 90px;
+    color: #fff;
+}
+
+.drop{
     color: #fff;
 }
 
@@ -60,7 +95,6 @@ a{
 
 .banner{
     overflow: hidden;
-    border-radius: 30px;
     margin-bottom: 7rem;
 }
 
@@ -122,10 +156,10 @@ a{
 .shadow{
     position: absolute;
     right: 0;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background: linear-gradient(to left, #4306b6, #983ee2);
-    filter: blur(100px);
+    filter: blur(170px);
 }
 
 .banner h1{
@@ -182,7 +216,7 @@ button{
 
 /*TEMA*/
 .tema{
-    margin: 8rem 0 8rem 0;
+    margin: 4rem 0 4rem 0;
     text-align: center;
     font-size: 1.30rem;
 }
@@ -259,6 +293,7 @@ button{
     grid-template-columns: 1fr 0.95fr;
     gap: 5rem;
     row-gap: 20px;
+    overflow: hidden;
     margin-bottom: 60px;
 }
 
@@ -317,10 +352,76 @@ button{
     line-height: 30px;
 }
 
-strong{
-    font-size: 1.50rem;
+.b1{
+    background: #0108187a;   
+    transform: translateY(25px); 
+    padding: 1rem;
+    border-radius: 15px;
+    height: fit-content;
 }
 
+.b2{
+    background: rgba(23, 241, 150, 0.040);   
+    transform: translateY(-30px); 
+    padding: 1rem;
+     height: fit-content;
+    border-radius: 15px;
+     animation: transicao-2 1s ease-in-out alternate infinite;
+}
+
+@keyframes transicao-2 {
+    from{
+    transition: .3s ease;
+     transform: translateY(-40px); 
+    }
+}
+
+.b3{
+    background: rgb(152, 62, 226, 0.040);   
+    transform: translateY(-2px); 
+    padding: 1rem;
+     height: fit-content;
+    border-radius: 15px;
+     animation: transicao 1s ease-in-out alternate infinite;
+}
+
+.b4{
+    background: rgb(255, 153, 0, 0.040);   
+    transform: translateY(40px); 
+    padding: 1rem;
+     height: fit-content;
+    border-radius: 15px;
+    animation: transicao 2s ease-in-out alternate infinite;
+}
+
+@keyframes transicao {
+    from{
+    transition: 3s ease;
+     transform: translateY(30px); 
+    }
+}
+
+ strong{
+    font-size: 1.40rem;
+}
+
+.benef p{
+    color: #dbdbdb;
+    font-size: 16px;
+}
+
+
+.b2 strong{
+    color: #17F197;
+}
+
+.b3 strong{
+    color: #983ee2;
+}
+
+.b4 strong{
+    color: #ff9900;
+}
 /*CARD-LOGO*/
 
 .card-icon2{
@@ -329,14 +430,27 @@ strong{
     gap: 2rem;
     height: auto;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .card-2{
-    outline: 0.1px solid #b1b1b12d;
+    outline: 0.1px solid #d8d8d82d;
     border-radius: 10px;
     padding: 1rem;
     transition: .2s ease;
 }
+
+/* .card-2:nth-child(2){
+    outline: 0.1px solid #17F197;
+}
+
+.card-2:nth-child(3){
+    outline: 0.1px solid #580ce7;
+}
+.card-2:nth-child(4){
+    outline: 0.1px solid #ff9900;
+}
+ */
 
 .card-2:hover{
     background: #151822;
@@ -400,5 +514,5 @@ strong{
 footer{
     margin-top: 10rem;
     height: 400px;
-    background: #17191f;
+    background: #090C12;
 }

@@ -7,11 +7,13 @@
     <!--STYLE CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chat.css">
+    <!--AOS ANIMATE-->
+    <link rel="stylesheet" href="assets/animation/aos.css">
+    <script src="assets/animation/aos.js"></script>
     <title>X-CONTROL</title>
 </head>
 
 <body>
-    
     <div class="chat">
         <a href="#header"><img  width="19px" src="img/collapse.png"></a> 
     </div>
@@ -20,15 +22,15 @@
     </div>
     <header id="header">
         <div class="logo">
-            <h2>Web3</h2>
+            <h2>XCONT</h2>
         </div>
         <div class="menu">
             <ul>
-                <a href=""><li>Ladings</li></a>
+                <a href=""><li id="home">Ladings</li></a>
                 <a href=""><li >Pages</li></a>
                 <a href=""><li class="drop">Account
                     <div class="drop-down">
-                        <a href="#">Ana Bela</a>
+                       
                         <a href="#">Ana Bela</a>
                         <a href="#">Ana Bela</a>
                         <a href="#">Ana Bela</a>
@@ -39,7 +41,8 @@
             </ul>
         </div>
         <div class="btn-comprar">
-           <a href="login.html"> <button type="submit">Login</button> </a>
+            <img src="img/Tinder.svg" alt="" width="24px">
+          <a href="login.html"> <button type="submit">Login</button> </a>
         </div>
     </header>
     <section class="banner">
@@ -49,7 +52,7 @@
         <div class="shadow"></div>
         <div class="sec-d">
             <video onclick="stop()" id="vid" autoplay loop muted width="100%" >
-                <source  src="img/original-faa5eca6fe377cba010335c283d7a7e1.mp4" type="">
+                <source  src="imgd/original-faa5eca6fe377cba010335c283d7a7e1.mp4" type="">
             </video>
         </div>
     </section>
@@ -65,255 +68,260 @@
             }
         }
     </script>
-    <div class="about-me">
-        <div class="about-img"></div>
-        <div class="about-text">
-            <h2>Award-Winning Software Company</h2>
-            <p>Erat pharetra sed at fringilla etiam 
-                nullam platea fringilla ravida 
-                sodales sit mauris amet massa 
-                justo.  fringilla etiam 
-                nullam platea fringilla. Gravida 
-                sodales sit mauris amet massa 
-                justo. Midle
-            </p>
-            <div class="btn-about" >
+    <div class="content-margin" style="margin: auto; width: 92%;">
+        <div class="about-me" >
+            <div class="about-img"></div>
+            <div class="about-text">
+                <h2>Award-Winning Software Company</h2>
+                <p>Erat pharetra sed at fringilla etiam 
+                    nullam platea fringilla ravida 
+                    sodales sit mauris amet massa 
+                    justo.  fringilla etiam 
+                    nullam platea fringilla. Gravida 
+                    sodales sit mauris amet massa 
+                    justo. Midle
+                </p>
+                <div class="btn-about" >
+                    <button type="submit">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="tema">
+            <h1>Сustom Software Solutions</h1>
+        </div>
+        <div class="card-icon">
+            <div class="card-1" >
+                <img src="img/combo_chart.png" alt="" srcset="">
+                <h2>Travel</h2>
+                <p>
+                    Erat pharetra sed at fringilla etiam 
+                    nullam platea fringilla. Gravida 
+                    sodales sit mauris amet  
+                </p>
+            </div>
+            <div class="card-1">
+                <img src="img/lightning.png" alt="" srcset="">
+                <h2>Travel</h2>
+                <p>
+                    Erat pharetra sed at fringilla etiam 
+                    nullam platea fringilla. Gravida 
+                    sodales sit mauris amet  
+                </p>
+            </div>
+            <div class="card-1">
+                <img src="img/heart.png" alt="" srcset="">
+                <h2>Travel</h2>
+                <p>
+                    Erat pharetra sed at fringilla etiam 
+                    nullam platea fringilla. Gravida 
+                    sodales sit mauris amet 
+                </p>
+            </div>
+            <div class="card-1">
+                <img src="img/goal.png" alt="" srcset="">
+                <h2>Travel & Standard About</h2>
+                <p>
+                    Erat pharetra sed at fringilla etiam 
+                    nullam platea fringilla. Gravida 
+                    sodales sit mauris amet
+                </p>
+            </div>
+        </div>
+        <div class="carrosel">
+            <div class="car-text">
+                <div class="text-car" >
+                    <h2 id="ba">Award-Winning 
+                        Software Company
+                        Software Company</h2>
+                    <p>Erat pharetra sed at fringilla etiam nullam platea 
+                        fringilla ravida sodales sit mauris amet massa justo. 
+                        fringilla etiam nullam platea fringilla. 
+                        Gravida sodales sit mauris amet massa justo. Midle</p>
+                </div>
+                <div class="btn-prev">
+                    <button type="" onclick="back()"><</button>
+                    <button type="" onclick="next()">></button>
+                </div>
+            </div>
+            <div class="car-pic" id="carpic"></div>
+            <script>
+                var a = document.getElementById("carpic");
+                var b = document.getElementById("ba");
+                function next(){
+                a.style.background ="url(/img/product-3-3.jpg)";
+                b.innerHTML = "ANA";
+                }
+            </script>
+            <script>
+                var a = document.getElementById("carpic");
+                function back(){
+                a.style.background ="url(img/p2.png)";
+                }
+            </script>
+        </div>
+        <div class="parceiros">
+            <div class="par">
+                <img src="img/p1.png" alt="">
+                <p>Javascript</p>
+            </div>
+            <div class="par">
+                <img src="img/p2.png" alt="">
+                <p>React JS</p>
+            </div>
+            <div class="par">
+                <img src="img/p3.png" alt="">
+                <p>Angular</p>
+            </div>
+            <div class="par">
+                <img src="img/p4.png" alt="">
+                <p>Laravel</p>
+            </div>
+            <div class="par">
+                <img src="img/p5.png" alt="">
+                <p>Python</p>
+            </div>
+            <div class="par">
+                <img src="img/p6.png" alt="">
+                <p>C#</p>
+            </div>
+        </div>
+        <div class="tema">
+            <h1>Explore Our Featured Projects</h1>
+        </div>
+        <div class="proj">
+            <div class="proj-1" >
+                <div class="proj-l" >
+                    <img src="img/01.png" width="100%" data-aos="fade-right">
+                </div>
+                <div class="proj-r" data-aos="fade-left">
+                <p>Landing Page</p>
+                <h2>Task management app</h2>
+                <p id="p2">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facilisi convallis vel tempus.</p>
+                <p id="p3">
+                    Product Strategy / Front end Development / Systems Design / Web Development
+                </p>
                 <button type="submit">Read More</button>
-            </div>
-        </div>
-    </div>
-    <div class="tema">
-        <h1>Сustom Software Solutions</h1>
-    </div>
-    <div class="card-icon">
-        <div class="card-1">
-            <img src="img/combo_chart.png" alt="" srcset="">
-            <h2>Travel</h2>
-            <p>
-                Erat pharetra sed at fringilla etiam 
-                nullam platea fringilla. Gravida 
-                sodales sit mauris amet  
-            </p>
-        </div>
-        <div class="card-1">
-            <img src="img/lightning.png" alt="" srcset="">
-            <h2>Travel</h2>
-            <p>
-                Erat pharetra sed at fringilla etiam 
-                nullam platea fringilla. Gravida 
-                sodales sit mauris amet  
-            </p>
-        </div>
-        <div class="card-1">
-            <img src="img/heart.png" alt="" srcset="">
-            <h2>Travel</h2>
-            <p>
-                Erat pharetra sed at fringilla etiam 
-                nullam platea fringilla. Gravida 
-                sodales sit mauris amet 
-            </p>
-        </div>
-        <div class="card-1">
-            <img src="img/goal.png" alt="" srcset="">
-            <h2>Travel & Standard About</h2>
-            <p>
-                Erat pharetra sed at fringilla etiam 
-                nullam platea fringilla. Gravida 
-                sodales sit mauris amet
-            </p>
-        </div>
-        </div>
-    </div>
-    <div class="carrosel">
-        <div class="car-text">
-            <div class="text-car" >
-                <h2 id="ba">Award-Winning 
-                    Software Company
-                    Software Company</h2>
-                <p>Erat pharetra sed at fringilla etiam nullam platea 
-                    fringilla ravida sodales sit mauris amet massa justo. 
-                    fringilla etiam nullam platea fringilla. 
-                    Gravida sodales sit mauris amet massa justo. Midle</p>
-            </div>
-            <div class="btn-prev">
-                <button type="" onclick="back()"><</button>
-                <button type="" onclick="next()">></button>
-            </div>
-        </div>
-        <div class="car-pic" id="carpic"></div>
-        <script>
-            var a = document.getElementById("carpic");
-            var b = document.getElementById("ba");
-            function next(){
-               a.style.background ="url(/img/product-3-3.jpg)";
-               b.innerHTML = "ANA";
-            }
-        </script>
-        <script>
-            var a = document.getElementById("carpic");
-            function back(){
-               a.style.background ="url(img/p2.png)";
-            }
-        </script>
-    </div>
-    <div class="parceiros">
-        <div class="par">
-            <img src="img/p1.png" alt="">
-            <p>Javascript</p>
-        </div>
-        <div class="par">
-            <img src="img/p2.png" alt="">
-            <p>React JS</p>
-        </div>
-        <div class="par">
-            <img src="img/p3.png" alt="">
-            <p>Angular</p>
-        </div>
-         <div class="par">
-            <img src="img/p4.png" alt="">
-            <p>Laravel</p>
-        </div>
-        <div class="par">
-            <img src="img/p5.png" alt="">
-            <p>Python</p>
-        </div>
-        <div class="par">
-            <img src="img/p6.png" alt="">
-            <p>C#</p>
-        </div>
-    </div>
-    <div class="tema">
-        <h1>Explore Our Featured Projects</h1>
-    </div>
-    <div class="proj">
-        <div class="proj-1">
-            <div class="proj-l">
-                <img src="img/01.png" width="100%" alt="">
-            </div>
-            <div class="proj-r">
-               <p>Landing Page</p>
-               <h2>Task management app</h2>
-               <p id="p2">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi convallis vel tempus.</p>
-               <p id="p3">
-                Product Strategy / Front end Development / Systems Design / Web Development
-               </p>
-               <button type="submit">Read More</button>
-            </div>
-        </div>
-        <div class="proj-1">
-            <div class="proj-l">
-                <img src="img/02.png" width="100%" alt="">
-            </div>
-            <div class="proj-r">
-               <p>Landing Page</p>
-               <h2>Landing page for electric scooters</h2>
-               <p id="p2">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi convallis vel tempus.</p>
-               <p id="p3">
-                Product Strategy / Front end Development / Systems Design / Web Development
-               </p>
-              <a href="assets/progressbar.html"> <button type="submit">Read More</button> 
-              </a>
-            </div>
-        </div>
-        <div class="proj-1">
-            <div class="proj-l">
-                <img src="img/03.png" width="100%" alt="">
-            </div>
-            <div class="proj-r">
-               <p>Web App</p>
-               <h2>Сrypto market dashboard</h2>
-               <p id="p2">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi convallis vel tempus.</p>
-               <p id="p3">
-                Product Strategy / Front end Development / Systems Design / Web Development
-               </p>
-               <button type="submit">Read More</button>
-            </div>
-        </div>
-    </div>
-    <div class="tema">
-        <h1>Our benefits</h1>
-    </div>
-    <div class="benef">
-        <div class="b1">
-            <strong>Prototype in 24 hrs</strong>
-            <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi</p>
-        </div>
-        <div class="b1">
-            <strong>Prototype in 24 hrs</strong>
-            <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi</p>
-        </div>
-        <div class="b1">
-            <strong>Prototype in 24 hrs</strong>
-            <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi</p>
-        </div>
-        <div class="b1">
-            <strong>Prototype in 24 hrs</strong>
-            <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
-                pellentesque urna sit facilisi</p>
-        </div>
-    </div><br><br>
-     <div class="card-icon2">
-        <div class="card-2">
-            <h2>Logolayout</h2>
-        </div>
-        <div class="card-2">
-            <h2>Logolayout</h2>
-        </div>
-        <div class="card-2">
-            <h2>Logolayout</h2>
-        </div>
-        <div class="card-2">
-            <h2>Logolayout</h2>
-        </div>
-    </div>
-    <div class="tema"></div>
-    <div class="blogs">
-        <div class="blogs-1">
-            <div class="blogs-photo"  id="ph1">
-
-            </div>
-            <div class="blogs-text">
-                <div class="separator">
-                    <p>Bussines</p>
-                    <span>12 May 23</span>
                 </div>
-                <h2>How to check the website before releasing?</h2>
             </div>
-        </div>
-        <div class="blogs-1">
-            <div class="blogs-photo" id="ph2">
-
-            </div>
-            <div class="blogs-text">
-                <div class="separator">
-                    <p>Bussines</p>
-                    <span>12 May 23</span>
+            <div class="proj-1">
+                <div class="proj-l">
+                    <img src="img/02.png" width="100%" alt="">
                 </div>
-                <h2>How to check the website before releasing?</h2>
-            </div>
-        </div>
-        <div class="blogs-1">
-            <div class="blogs-photo" id="ph3">
-
-            </div>
-            <div class="blogs-text">
-                <div class="separator">
-                    <p>Bussines</p>
-                    <span>04 Jun 23</span>
+                <div class="proj-r">
+                <p>Landing Page</p>
+                <h2>Landing page for electric scooters</h2>
+                <p id="p2">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facilisi convallis vel tempus.</p>
+                <p id="p3">
+                    Product Strategy / Front end Development / Systems Design / Web Development
+                </p>
+                <a href="assets/progressbar.html"> <button type="submit">Read More</button> 
+                </a>
                 </div>
-                <h2>How to check the website before releasing?</h2>
+            </div>
+            <div class="proj-1">
+                <div class="proj-l">
+                    <img src="img/03.png" width="100%" alt="">
+                </div>
+                <div class="proj-r">
+                <p>Web App</p>
+                <h2>Сrypto market dashboard</h2>
+                <p id="p2">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facilisi convallis vel tempus.</p>
+                <p id="p3">
+                    Product Strategy / Front end Development / Systems Design / Web Development
+                </p>
+                <button type="submit">Read More</button>
+                </div>
             </div>
         </div>
+        <div class="tema" data-aos="slide-up">
+            <h1>Our benefits</h1>
+        </div>
+        <div class="benef">
+            <div class="b1" data-aos="slide-up">
+                <strong>Prototype in 24 hrs</strong>
+                <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facilisi</p>
+            </div>
+            <div class="b2">
+                <strong>Prototype in 24 hrs</strong>
+                <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facivcvxcvclisi</p>
+                    beleza imeditara
+                </div>
+            <div class="b3" data-aos="fade-left">
+                <strong>Prototype in 24 hrs</strong>
+                <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facilisi</p>
+            </div>
+            <div class="b4">
+                <strong>Prototype in 24 hrs</strong>
+                <p>Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla sed quis duis tristique orci. Odio in 
+                    pellentesque urna sit facilisi</p>
+            </div>
+        </div><br><br><br>
+        <div class="card-icon2">
+            <div class="card-2" data-aos="fade-right">
+                <h2>Logolayout</h2>
+            </div>
+            <div class="card-2">
+                <h2>Logolayout</h2>
+            </div>
+            <div class="card-2">
+                <h2>Logolayout</h2>
+            </div>
+            <div class="card-2">
+                <h2>Logolayout</h2>
+            </div>
+        </div>
+        <div class="tema"></div>
+        <div class="blogs">
+            <div class="blogs-1">
+                <div class="blogs-photo"  id="ph1">
+
+                </div>
+                <div class="blogs-text">
+                    <div class="separator">
+                        <p>Bussines</p>
+                        <span>12 May 23</span>
+                    </div>
+                    <h2>How to check the website before releasing?</h2>
+                </div>
+            </div>
+            <div class="blogs-1">
+                <div class="blogs-photo" id="ph2">
+
+                </div>
+                <div class="blogs-text">
+                    <div class="separator">
+                        <p>Bussines</p>
+                        <span>12 May 23</span>
+                    </div>
+                    <h2>How to check the website before releasing?</h2>
+                </div>
+            </div>
+            <div class="blogs-1">
+                <div class="blogs-photo" id="ph3">
+
+                </div>
+                <div class="blogs-text">
+                    <div class="separator">
+                        <p>Bussines</p>
+                        <span>04 Jun 23</span>
+                    </div>
+                    <h2>How to check the website before releasing?</h2>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!---RODÁPE-->
     <footer>
 
     </footer>
+
+    <script src="assets/animation/module.js"></script>
 </body>
 </html>
